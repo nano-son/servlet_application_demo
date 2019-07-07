@@ -12,7 +12,7 @@
 
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>me.nanostudio.webapp.AppConfiguration</param-value>
+    <param-value>me.nanostudio.webapp.config.AppConfiguration</param-value>
   </context-param>
 
   <listener>
@@ -38,10 +38,10 @@
     </init-param>
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>me.nanostudio.webapp.WebConfiguration</param-value>
+      <param-value>me.nanostudio.webapp.controller.WebConfiguration</param-value>
     </init-param>
   </servlet>
-  
+
   <servlet-mapping>
     <servlet-name>dispatcherServlet</servlet-name>
     <url-pattern>/</url-pattern>
